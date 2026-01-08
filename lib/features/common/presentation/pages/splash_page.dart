@@ -1,5 +1,5 @@
-import 'package:chattapp/features/chat/presentation/pages/chat_page.dart';
 import 'package:chattapp/features/common/domain/usecases/splash_time.dart';
+import 'package:chattapp/features/chat/presentation/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../bloc/splash_bloc.dart';
@@ -18,7 +18,7 @@ class SplashPage extends StatelessWidget {
           if (state is SplashDone) {
             Navigator.pushReplacement(
               context,
-              MaterialPageRoute(builder: (_) => ChatPage()),
+              MaterialPageRoute(builder: (_) => HomePage()),
             );
           }
         },
